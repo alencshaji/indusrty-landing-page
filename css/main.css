@@ -1,8 +1,7 @@
-/* General Styles for All Screen Sizes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
 body {
-    font-family: "Poppins", serif;
-    font-weight: 200;
-    font-style: normal;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
 }
@@ -48,6 +47,10 @@ header {
 
 .headText{
     margin-bottom: 2px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgba(3, 3, 24, 0.918);
 }
 
 header #logo {
@@ -90,7 +93,9 @@ footer a {
     text-decoration: none;
     margin: 0 5px;
 }
-
+section{
+    height: 100vh;
+}
 /* Hero Section Styling */
 main {
     position: relative;
@@ -101,10 +106,9 @@ main {
 }
 
 .hero-sec {
-    padding: 1rem;
     position: absolute;
     color: rgb(169, 20, 20);
-    top: 5%; 
+    top: 24%; 
     left: 50%;
     transform: translate(-50%, 0); /* Center horizontally */
     text-align: center;
@@ -123,11 +127,10 @@ main {
     object-fit: cover;
     position: relative;
     overflow: hidden;
+   
 }
 
-
-
-#hero button {
+/* #hero button {
     margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -135,23 +138,18 @@ main {
     color: rgb(8, 7, 7);
     border: none;
     cursor: pointer;
-}
+} */
 
 #hero button:hover {
     background-color: #333;
 }
-
-/* Desktop View (default styles) */
 header nav button {
-    display: none; /* Hide mobile menu button on desktop */
+    display: none;
 }
-
-
 
 #accurates{
     display: flex;
 }
-
 #ppe-detection {
     display: flex;
     align-items: center;
@@ -159,15 +157,22 @@ header nav button {
     margin-top: 2rem;
     flex-direction: row;
     gap: 1rem;
+    padding-top: 8.5rem;
+
 }
 
 .ppe-sec-1{
-    margin-left: 1rem;
+    margin-left: 8rem;
     text-align: left;
     max-width: 60%;
 }
+.ppe-sec-1 h2{
+    margin-bottom: 10px;
+}
+.ppe-sec-1 p{
+    text-align: left;
+}
 .imagePpeSec {
-    max-height:fit-content;
     max-width: 40%;
     max-height: 45rem;
 }
@@ -186,7 +191,9 @@ header nav button {
     text-align: left;
     max-width: 60%;
 }
-
+.facial-sec-1{
+    margin-right: 10rem;
+}
 .imageFacialSec {
     max-height:fit-content;
     max-width: 40%;
@@ -203,13 +210,25 @@ header nav button {
     margin-top: 2rem;
     flex-direction: row; 
 }
-
+.fleet-management-sec1 p{
+    text-align: left;
+}
+.fleet-management-sec1 h2{
+    margin-bottom: 10px;
+}
 .fleet-management-sec1 {
     text-align: left;
     flex: 1;
     padding-left: 20px;
-}
+    margin-left: 8rem;
 
+}
+.facial-sec-1 p{
+    text-align: left;
+}
+.facial-sec-1 h2{
+    margin-bottom: 10px;
+}
 .image-container {
     flex: 1;
     position: relative;
@@ -356,4 +375,103 @@ header nav button {
     footer {
         font-size: 14px;
     }
+}
+.button-style1{
+    border-radius: 50px;
+    background: #006590;
+    border: 2px solid #006590;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.button-style2{
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid #006590;
+    color:#006590;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.button-style3{
+    border-radius: 50px;
+    background: #006590;
+    border: 2px solid #006590;
+    color: white;
+    font-size: 16px;
+}
+.button-know-more{
+    border-radius: 50px;
+    background: #006590;
+    border: 2px solid #006590;
+    color: white;
+    font-size: 16px;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.button-know-more::after {
+    content: "\2192"; /* Right arrow Unicode */
+    margin-left: 8px;
+}  
+li{
+    padding-left: 30px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.logo{
+font-weight: 800;
+font-size: 32px;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+.hero-content-p{
+text-align: center;
+    color: #33333398;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 25px;
+}
+.section-content-p{
+    text-align: center;
+    color: #141414;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 25px;
+}
+.hero-text-container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+#hero{
+    position: relative;
+}
+#hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.font-style1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.font-style2{
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
