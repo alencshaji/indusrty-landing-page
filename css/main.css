@@ -37,7 +37,7 @@ p{
   
 
 header {
-    margin: 10px;
+    margin: 10px 5rem 10px  5rem;
     background-color: white;
     color: rgb(34, 30, 30);
     padding: 10px;
@@ -112,7 +112,6 @@ main {
 }
 
 .btn-hero {
-    background-image: url('/Button/Primary/Button\ name-11.png');
     display: flex;
     gap: 1rem;
     justify-content: center;
