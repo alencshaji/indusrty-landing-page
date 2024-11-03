@@ -152,13 +152,14 @@ header nav button {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background-image: url('/Images/about\ us.png');
-    background-size: cover;
+    background-image: url('/Images/about us.png');
+    background-size: 100% 100%; /* Stretches to fill both width and height */
     background-position: center;
     background-repeat: no-repeat;
     color: black;
     position: relative;
 }
+
 
 .accurates-sec-1 {
     max-width: 60%;
