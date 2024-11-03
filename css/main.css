@@ -139,9 +139,6 @@ main {
     cursor: pointer;
 } */
 
-#hero button:hover {
-    background-color: #333;
-}
 
 header nav button {
     display: none;
@@ -152,7 +149,7 @@ header nav button {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background-image: url('/Images/about us.png');
+    background-image: url('/Images/aboutus.png');
     background-size: 100% 100%; /* Stretches to fill both width and height */
     background-position: center;
     background-repeat: no-repeat;
@@ -168,6 +165,7 @@ header nav button {
 .accurates-text-1 {
     text-align: right;
     font-weight: 900;
+    font-size: 70px;
 }
 
 .accurates-sec-2 {
@@ -180,22 +178,21 @@ header nav button {
 
 .centered-image {
     position: absolute;
-    width: 150rem;
-    height: 20rem;
+width: 85rem;
+height: 25rem;
     background-image: url('/Images/Ab.\ Accurates\ AI\ Marque.png');
     /* Centered image */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    top: 65%;
-    left: 60%;
+    top: 54%;
+    left: 55%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .accurates-sec-1,
 .accurates-sec-2 {
-    padding-top: 5rem;
     z-index: 2;
 }
 
@@ -207,7 +204,6 @@ header nav button {
     margin-top: 2rem;
     flex-direction: row;
     gap: 1rem;
-    padding-top: 8.5rem;
 
 }
 
@@ -255,12 +251,13 @@ header nav button {
 
 
 #fleet-management {
-    /* height: 100vh; */
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
     flex-direction: row;
+    position: relative;
 }
 
 .fleet-management-sec1 p {
@@ -273,7 +270,6 @@ header nav button {
 
 .fleet-management-sec1 {
     text-align: left;
-    flex: 1;
     padding-left: 20px;
     margin-left: 8rem;
 
@@ -288,15 +284,16 @@ header nav button {
 }
 
 .image-container {
-    flex: 1;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    right: 0;
+    z-index: -1;
 }
 
 .imagefleet {
     max-width: 100%;
     max-height: 45rem;
-    mask-image: linear-gradient(to right, rgba(196, 179, 179, 0), rgb(156, 134, 134));
+  
 }
 
 .image-container::before {
@@ -318,29 +315,33 @@ header nav button {
     justify-content: center;
     gap: 16px;
     background-image: url('/Images/Frame\ 11.png');
-    background-size: 100% 100%; /* Stretches to fill both width and height */
     background-position: center;
     background-repeat: no-repeat;
     color: black;
     position: relative;
+background-size: cover;
 }
 
 .imageTabSec {
     overflow: hidden;
-    max-height: 100%;
-    max-width: 100%;
     object-fit: cover;
     z-index: 1;
+    transform: rotate(0deg);
+    position: absolute;
+    top: -86px;
+    right: 69px;
+    width: 78%;
 }
 
 #product-main-sec {
     position: relative;
-    /* height: 100vh; */
+height: 120vh;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:10rem;
 }
 
 .productSec {
@@ -348,20 +349,24 @@ header nav button {
     max-width: 100%;
     object-fit: cover;
 }
-
+.product-content{
+    padding-top: 40px;
+}
 #product-main-sec h2 {
     margin-top: 1rem;
 }
-
 
 /* Footer Styling */
 footer {
     height: 55vh;
     margin-top: 1rem;
-    padding: auto;
     background-color: #006490;
     color: white;
     padding: 5rem;
+    gap: 183px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
 }
 
 /* Grid Layout for Footer Sections */
@@ -384,18 +389,16 @@ footer {
 }
 
 .footer-sec-list li {
-    padding: 8px;
+    padding: 10px;
 }
 
 .footer-sec-list li a {
     color: white;
-    font-size: 13px;
+    font-size: 19px;
     text-decoration: none;
 }
-
 .last-sec  {
     display: flex;
-    align-items:center;
     justify-content: space-between;
     font-size: 8px;
 }
@@ -409,21 +412,34 @@ footer {
     justify-content: space-between;
 }
 
-.footer-end1  p{
-    padding-left: 5px;
+.footer-end1  li{
+    padding-left: 32px;
+    list-style: none;
+    font-size: 14px;
+    color: #87b6cb;
 }
 
 .footer-end2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 20px;
     
 }
-
-.footer-end2  i{
-    padding-left: 5px;
+.footer-logo{
+    margin: auto;
+    display: grid;
+    height: 100px;
+    padding-top: 30px;
 }
-
+.footer-end2  i{
+    padding-left: 15px;
+}
+.footer-head{
+    font-size:13px;
+    color:#87b6cb;
+    padding-bottom: 15px!important;
+}
 /* Mobile View */
 @media (max-width: 768px) {
     h1 {
@@ -578,22 +594,26 @@ footer {
     border: 2px solid #006590;
     color: white;
     font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
-
+.button-style1::after{
+    content: "\2192";
+    margin-left: 8px;
+}
 .button-style2 {
     border-radius: 50px;
     background: transparent;
     border: 2px solid #006590;
     color: #006590;
     font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
 }
 
 .button-style3 {
@@ -607,7 +627,12 @@ footer {
     border: none;
     background:none;
     color: black;
-    font-size: 16px;
+    font-size: 28px;
+}
+.button-style4::after {
+    content: "\2192";
+    /* Right arrow Unicode */
+    margin-left: 8px;
 }
 
 .button-know-more {
@@ -691,11 +716,38 @@ li {
     font-optical-sizing: auto;
     font-style: normal;
 }
-
-.accurates-content-p {
+.font-style3{
     color: #33333398;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Inter", sans-serif;
     font-style: normal;
-    line-height: 25px;
+
+}
+.accurates-content-p {
+    color: #33333398;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    line-height: 35px;
+    padding-top:15px;
+    padding-left: 10px;
+}
+.about-text{
+    display: flex;
+margin: auto;
+padding-left: 10rem;
+padding-right: 10rem;
+align-items: center;
+justify-content: center;
+}
+.btn-container{
+    position: absolute;
+    top:65%;
+    left:50%;
+}
+.tab-container{
+    position: relative;
+}
+.product-content h2{
+    margin-bottom: 0px;
 }
