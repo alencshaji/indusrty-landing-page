@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-size: 61.04px;
 }
@@ -12,31 +13,36 @@ h1 {
 h2 {
     font-size: 48.03px;
 }
+
 h3 {
     font-size: 25.63px;
 }
+
 h4 {
     font-size: 22.78px;
 }
+
 h5 {
     font-size: 20.25px;
 }
+
 h6 {
     font-size: 18px;
 }
 
-p{
+p {
     font-size: 1rem;
 }
-.smallp{
-    font-size:12.8px;
+
+.smallp {
+    font-size: 12.8px;
 }
 
 
-  
+
 
 header {
-    margin: 10px 5rem 10px  5rem;
+    margin: 10px 5rem 10px 5rem;
     background-color: white;
     color: rgb(34, 30, 30);
     padding: 10px;
@@ -45,7 +51,7 @@ header {
     justify-content: space-between;
 }
 
-.headText{
+.headText {
     margin-bottom: 2px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -105,14 +111,17 @@ main {
     text-align: center;
 }
 
+
+
 .hero-sec {
     position: absolute;
     color: rgb(169, 20, 20);
-    top: 24%; 
+    top: 24%;
     left: 50%;
-    transform: translate(-50%, 0); /* Center horizontally */
+    transform: translate(-50%, 0);
+    /* Center horizontally  24*/
     text-align: center;
-    z-index: 1;  
+    z-index: 1;
 }
 
 .btn-hero {
@@ -147,10 +156,32 @@ header nav button {
     display: none;
 }
 
-#accurates{
+
+#accurates-sec {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 100vh;
+}
+
+.accurates-sec-1{
+    max-width: 60%;
+}
+.accurates-text-1{
+    text-align: right;
+    font-weight: 900;
+}
+
+.accurates-sec-2{
+    max-width: 40%;
+}
+.accurates-sec-2 p{
+    /* padding-top: 16px; */
+    text-align: left;
 }
 #ppe-detection {
+     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,7 +191,6 @@ header nav button {
     padding-top: 8.5rem;
 
 }
-
 .ppe-sec-1{
     margin-left: 8rem;
     text-align: left;
@@ -172,13 +202,10 @@ header nav button {
 .ppe-sec-1 p{
     text-align: left;
 }
-.imagePpeSec {
-    max-width: 40%;
-    max-height: 45rem;
-}
 
 
 #facial-main-sec {
+     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -195,20 +222,21 @@ header nav button {
     margin-right: 10rem;
 }
 .imageFacialSec {
-    max-height:fit-content;
+    max-height: fit-content;
     max-width: 40%;
 }
 
 
 
 
-#fleet-management{
-    height: 100vh;
+
+#fleet-management {
+     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
-    flex-direction: row; 
+    flex-direction: row;
 }
 .fleet-management-sec1 p{
     text-align: left;
@@ -246,43 +274,129 @@ header nav button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%; /* Adjust width of blurred area */
+    width: 50%;
+    /* Adjust width of blurred area */
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     pointer-events: none;
 }
 
 
+#tab-main-sec {
+    position: relative;
+     /* height: 100vh; */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('/Images/Rectangle\ 43.png'); */
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
 
+.imageTabSec {
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#product-main-sec {
+    position: relative;
+     /* height: 100vh; */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productSec {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#product-main-sec h2 {
+    margin-top: 1rem;
+}
+
+
+/* Footer Styling */
+footer {
+    margin-top: 1rem;
+    background-color: #006490;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Grid Layout for Footer Sections */
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* Footer Headings */
+.footer-sec h6 {
+    font-size: 14px;
+    color: #87b6cb;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Links */
+.footer-sec-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-sec-list li a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
 
 /* Mobile View */
 @media (max-width: 768px) {
     h1 {
         font-size: 32.44px;
+        margin: 0;
+        padding: 0;
     }
-    
+
     h2 {
         font-size: 28.83px;
+        margin: 0;
+        padding: 0;
     }
+
     h3 {
         font-size: 25.63px;
+        margin: 0;
+        padding: 0;
     }
+
     h4 {
         font-size: 22.78px;
     }
+
     h5 {
         font-size: 20.25px;
     }
+
     h6 {
         font-size: 18px;
     }
-    
-    p{
+
+    p {
         font-size: 1rem;
     }
-    .smallp{
-        font-size:12.8px;
+
+    .smallp {
+        font-size: 12.8px;
     }
+
     /* Adjust Header for Mobile */
     header {
         flex-direction: column;
@@ -306,15 +420,23 @@ header nav button {
     header #mobileMenu.show {
         display: flex;
     }
-   
+
 
     /* Mobile-specific styling */
     #hero {
         padding: 20px 0;
     }
-
     footer {
-        font-size: 14px;
+        padding: 1.5rem;
+    }
+
+    .footer-sections {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer-sec {
+        text-align: center;
     }
 }
 
@@ -322,24 +444,28 @@ header nav button {
     h1 {
         font-size: 25.44px;
     }
-    
+
     h2 {
         font-size: 20.83px;
     }
+
     h3 {
         font-size: 17.63px;
     }
+
     h4 {
         font-size: 15.78px;
     }
+
     h5 {
         font-size: 13.25px;
     }
+
     h6 {
         font-size: 10px;
     }
-    
-    p{
+
+    p {
         font-size: 12.8px;
     }
 
@@ -373,7 +499,8 @@ header nav button {
     }
 
     footer {
-        font-size: 14px;
+        padding: 1rem;
+        font-size: 13px;
     }
 }
 .button-style1{
