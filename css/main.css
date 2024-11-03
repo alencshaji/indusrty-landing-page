@@ -313,15 +313,16 @@ header nav button {
 
 
 #tab-main-sec {
-    position: relative;
-    /* height: 100vh; */
-    z-index: 2;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* background-image: url('/Images/Rectangle\ 43.png'); */
+    justify-content: center;
+    gap: 16px;
+    background-image: url('/Images/Frame\ 11.png');
+    background-size: 100% 100%; /* Stretches to fill both width and height */
+    background-position: center;
     background-repeat: no-repeat;
-    object-fit: fill;
+    color: black;
+    position: relative;
 }
 
 .imageTabSec {
@@ -329,6 +330,7 @@ header nav button {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
+    z-index: 1;
 }
 
 #product-main-sec {
@@ -354,6 +356,7 @@ header nav button {
 
 /* Footer Styling */
 footer {
+    height: 55vh;
     margin-top: 1rem;
     padding: auto;
     background-color: #006490;
@@ -687,4 +690,12 @@ li {
     font-family: "Space Grotesk", serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.accurates-content-p {
+    color: #33333398;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    line-height: 25px;
 }
