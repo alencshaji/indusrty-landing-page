@@ -143,20 +143,19 @@ main {
 header nav button {
     display: none;
 }
-
 #accurates-sec {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 1px;
     background-image: url('/Images/aboutus.png');
-    background-size: 100% 100%; /* Stretches to fill both width and height */
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: black;
     position: relative;
+    padding: 20px; /* Optional: Add some padding for better spacing */
 }
-
 
 .accurates-sec-1 {
     max-width: 60%;
@@ -177,19 +176,21 @@ header nav button {
 }
 
 .centered-image {
-    position: absolute;
-width: 85rem;
-height: 25rem;
-    background-image: url('/Images/Ab.\ Accurates\ AI\ Marque.png');
-    /* Centered image */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    background-image: url('/Images/Ab. Accurates AI Marque.png');
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
-    top: 54%;
-    left: 55%;
-    transform: translate(-50%, -50%);
     z-index: 1;
+    position: absolute; /* Keep it absolute to overlay properly */
+    top: 78%; /* Adjust as needed to position it lower */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Offset by half its size */
 }
+
 
 .accurates-sec-1,
 .accurates-sec-2 {
@@ -293,7 +294,7 @@ height: 25rem;
 .imagefleet {
     max-width: 100%;
     max-height: 45rem;
-  
+
 }
 
 .image-container::before {
@@ -319,7 +320,7 @@ height: 25rem;
     background-repeat: no-repeat;
     color: black;
     position: relative;
-background-size: cover;
+    background-size: cover;
 }
 
 .imageTabSec {
@@ -335,13 +336,13 @@ background-size: cover;
 
 #product-main-sec {
     position: relative;
-height: 120vh;
+    height: 120vh;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:10rem;
+    margin-top: 10rem;
 }
 
 .productSec {
@@ -349,9 +350,11 @@ height: 120vh;
     max-width: 100%;
     object-fit: cover;
 }
-.product-content{
+
+.product-content {
     padding-top: 40px;
 }
+
 #product-main-sec h2 {
     margin-top: 1rem;
 }
@@ -397,12 +400,14 @@ footer {
     font-size: 19px;
     text-decoration: none;
 }
-.last-sec  {
+
+.last-sec {
     display: flex;
     justify-content: space-between;
     font-size: 8px;
 }
-.last-sec p{
+
+.last-sec p {
     font-size: 8px;
 }
 
@@ -412,7 +417,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-end1  li{
+.footer-end1 li {
     padding-left: 32px;
     list-style: none;
     font-size: 14px;
@@ -424,22 +429,26 @@ footer {
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
-    
+
 }
-.footer-logo{
+
+.footer-logo {
     margin: auto;
     display: grid;
     height: 100px;
     padding-top: 30px;
 }
-.footer-end2  i{
+
+.footer-end2 i {
     padding-left: 15px;
 }
-.footer-head{
-    font-size:13px;
-    color:#87b6cb;
-    padding-bottom: 15px!important;
+
+.footer-head {
+    font-size: 13px;
+    color: #87b6cb;
+    padding-bottom: 15px !important;
 }
+
 /* Mobile View */
 @media (max-width: 768px) {
     h1 {
@@ -599,10 +608,12 @@ footer {
     padding-top: 18px;
     padding-bottom: 18px;
 }
-.button-style1::after{
+
+.button-style1::after {
     content: "\2192";
     margin-left: 8px;
 }
+
 .button-style2 {
     border-radius: 50px;
     background: transparent;
@@ -613,7 +624,7 @@ footer {
     padding-right: 38px;
     padding-top: 18px;
     padding-bottom: 18px;
-    
+
 }
 
 .button-style3 {
@@ -623,12 +634,14 @@ footer {
     color: white;
     font-size: 16px;
 }
+
 .button-style4 {
     border: none;
-    background:none;
+    background: none;
     color: black;
     font-size: 28px;
 }
+
 .button-style4::after {
     content: "\2192";
     /* Right arrow Unicode */
@@ -716,38 +729,44 @@ li {
     font-optical-sizing: auto;
     font-style: normal;
 }
-.font-style3{
+
+.font-style3 {
     color: #33333398;
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-style: normal;
 
 }
+
 .accurates-content-p {
     color: #33333398;
     font-size: 24px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     line-height: 35px;
-    padding-top:15px;
+    padding-top: 15px;
     padding-left: 10px;
 }
-.about-text{
+
+.about-text {
     display: flex;
-margin: auto;
-padding-left: 10rem;
-padding-right: 10rem;
-align-items: center;
-justify-content: center;
+    margin: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-items: center;
+    justify-content: center;
 }
-.btn-container{
+
+.btn-container {
     position: absolute;
-    top:65%;
-    left:50%;
+    top: 65%;
+    left: 50%;
 }
-.tab-container{
+
+.tab-container {
     position: relative;
 }
-.product-content h2{
+
+.product-content h2 {
     margin-bottom: 0px;
 }
