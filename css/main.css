@@ -176,19 +176,19 @@ header nav button {
 }
 
 .centered-image {
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
-    width: 100%; /* Set width to 100% */
-    height: 100%; /* Set height to 100% */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
     background-image: url('/Images/Ab. Accurates AI Marque.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-    position: absolute; /* Keep it absolute to overlay properly */
-    top: 78%; /* Adjust as needed to position it lower */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Offset by half its size */
+    position: absolute; 
+    top: 78%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
