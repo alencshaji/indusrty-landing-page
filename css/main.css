@@ -639,6 +639,10 @@ li {
     margin-bottom: 0px;
 }
 
+.accurates-text-2 {
+    display: none;
+}
+
 /* Mobile View - Hero Section */
 @media (max-width: 768px) {
     #hero {
@@ -753,6 +757,9 @@ li {
     }
     .centered-image{
         display: none;
+    }
+    .accurates-text-2 {
+        display: block;
     }
 
     
