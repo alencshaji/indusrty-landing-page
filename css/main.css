@@ -171,7 +171,7 @@ header nav button {
 }
 
 .accurates-text-1 , .accurates-text-2{
-    text-align: left;
+    text-align: right;
     font-weight: 900;
     font-size: 70px;
 }
@@ -732,7 +732,7 @@ li {
 
 
 /* Mobile View - Facial Section */
-@media (max-width: 1051px){
+@media (max-width: 1151px){
    
     #accurates-sec {
         background-image: none;
@@ -761,6 +761,9 @@ li {
     .accurates-text-3 {
         display: block;
     }
+    .accurates-text-3{
+        text-align: left;
+    } 
 
     
 }
