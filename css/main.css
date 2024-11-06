@@ -112,7 +112,6 @@ main {
     object-fit: cover;
     position: relative;
     overflow: hidden;
-
 }
 
 /* #hero button {
@@ -171,8 +170,8 @@ header nav button {
     max-width: 60%;
 }
 
-.accurates-text-1 {
-    text-align: right;
+.accurates-text-1 , .accurates-text-2{
+    text-align: left;
     font-weight: 900;
     font-size: 70px;
 }
@@ -603,6 +602,9 @@ li {
     font-style: normal;
 
 }
+.accurates-sec-none{
+    display: none;
+}
 
 .accurates-content-p {
     color: #33333398;
@@ -655,6 +657,7 @@ li {
         flex-direction: column;
         gap: 0.5rem;
     }
+  
 }
 
 @media (max-width: 500px) {
@@ -671,16 +674,15 @@ li {
 @media (max-width: 768px) {
     #accurates-sec {
         flex-direction: column;
-        padding: 10px;
         text-align: center;
     }
-    .about-text {
+    /* .about-text {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-    .accurates-sec-1, .accurates-sec-2 {
+    } */
+    .accurates-sec-1, .accurates-sec-2,.accurates-sec-none {
         max-width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .accurates-content-p {
         font-size: 16px;
@@ -726,7 +728,35 @@ li {
 
 
 /* Mobile View - Facial Section */
+@media (max-width: 1051px){
+   
+    #accurates-sec {
+        background-image: none;
+        flex-direction: column;
+    }
 
+    .accurates-text-1 {
+        font-size: 50px; 
+    }
+
+    .about-text{
+        flex-direction: column;
+    }
+    .accurates-sec-1{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+  
+    .accurates-sec-1 .accurates-text-1{
+        display: none;
+    }
+    .centered-image{
+        display: none;
+    }
+
+    
+}
 @media (max-width: 1051px) {
     .navBar{
         display: flex;
