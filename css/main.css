@@ -255,7 +255,9 @@ header nav button {
     max-height: fit-content;
     max-width: 40%;
 }
-
+.imagePpeSec-mobile, .imageFacialSec-mobile, .imagefleet-mobile{
+    display:none;
+}
 
 
 
@@ -317,6 +319,29 @@ header nav button {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     pointer-events: none;
 }
+@media (max-width: 768px) {
+    #tab-main-sec {
+        height: 60vh;
+        margin-top: 3rem;
+        position: relative !important;
+        background-size: auto!important;
+    }
+    
+.imageTabSec {
+    overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    position: absolute !important;
+    width: 10%;
+    height: 43rem;
+}
+}
 
 
 #tab-main-sec {
@@ -342,7 +367,53 @@ header nav button {
     right: 69px;
     width: 78%;
 }
+@media (max-width: 768px) {
+    #product-main-sec {
+        height: 120vh!important;
+        margin-top: 0rem!important;
+    } 
+    .productSec {
+        max-height: 100%;
+        max-width: 80%!important;
+        object-fit: cover;
+    }
+    #product-main-sec h2 {
+        font-size: 36.03px!important;
+    }
+    #product-main-sec .font-style3 {
+        font-size: 18px!important;
 
+    }
+    #product-main-sec p{
+        padding: 10px;
+    }
+    .btn-product-sec {
+        display: flex;
+        flex-direction: column !important;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn-product-sec .button-style2{
+            border-radius: 80px;
+            font-size: 22px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 16px;
+            padding-bottom: 16px; 
+            margin-left: 0px;
+    }
+    .btn-product-sec .button-style1{
+        border-radius: 80px;
+        font-size: 22px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-left: 0px; 
+}
+}
 #product-main-sec {
     position: relative;
     height: 120vh;
@@ -600,12 +671,13 @@ li {
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-style: normal;
-
 }
 .accurates-sec-none{
     display: none;
 }
-
+.watchDemo-margin{
+    margin-left: 10px;
+}
 .accurates-content-p {
     color: #33333398;
     font-size: 24px;
@@ -654,19 +726,26 @@ li {
         padding-right: 2rem;
     }
     .hero-content-p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 20px;
     }
     .btn-hero {
         flex-direction: column;
         gap: 0.5rem;
     }
+    .imageHeroSec {
+        height:80vh;
+        margin-top:200px;
+    }
+    .watchDemo-margin{
+        margin-left: 0px;
+    }
   
 }
 
 @media (max-width: 500px) {
     #hero h1 {
-        font-size: 20px;
+        font-size: 40px;
     }
     .hero-content-p {
         font-size: 12px;
@@ -679,6 +758,19 @@ li {
     #accurates-sec {
         flex-direction: column;
         text-align: center;
+        height: auto;
+        margin-top: 15rem;
+    }
+    .button-style4 {
+        padding-left: 21px!important;
+    }
+    .btn-container {
+        position: absolute;
+        top: 80%;
+        left: 0%;
+    }
+    .button-style4{
+        font-size: 16px!important;
     }
     /* .about-text {
         padding-left: 1rem;
@@ -691,6 +783,18 @@ li {
     .accurates-content-p {
         font-size: 16px;
         line-height: 24px;
+    }
+    .about-text {
+        padding-left: 0rem;
+    padding-right: 0rem;
+    align-items: flex-start;
+    }
+    .accurates-sec-2 p {
+        padding: 0px;
+        font-size: 18px;
+    }
+     h1{
+        font-size: 35px!important;
     }
 }
 
@@ -706,25 +810,38 @@ li {
 /* Mobile View - PPE Section */
 @media (max-width: 768px) {
     #ppe-detection {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 1rem;
-        padding: 10px;
+        padding: 15px;
+        height: auto;
+        margin-top: 3rem;
+
     }
     .ppe-sec-1 {
         margin-left: 0;
         max-width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+    .ppe-sec-1 h2{
+        font-size: 35px!important;
+        padding-top: 0px;
+        margin-top: 0px;
     }
     .imagePpeSec {
+display: none;
+    }
+    .imagePpeSec-mobile {
         width: 100%;
-        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        display: block;
+    }
+    .button-know-more{
+        font-size: 18px!important;
     }
 }
 
 @media (max-width: 500px) {
-    .ppe-sec-1 h2 {
-        font-size: 20px;
-    }
     .section-content-p {
         font-size: 14px;
     }
@@ -795,7 +912,7 @@ li {
     }
     .button-style1 {
         border-radius: 90px;
-        font-size: 13px;
+        font-size: 17px;
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 12px;
@@ -809,7 +926,7 @@ li {
     
     .button-style2 {
         border-radius: 80px;
-        font-size: 13px;
+        font-size: 17px;
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 12px;
@@ -858,28 +975,66 @@ li {
 @media (max-width: 768px) {
     #facial-main-sec {
         flex-direction: column;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
+        height: auto;
+        align-items: flex-start;
     }
     .facial-sec-1 {
         margin-right: 0;
         max-width: 100%;
+        text-align: left;
+    }
+    .facial-sec-1 h2{
+        margin: 0px;
+        font-size: 35px;
     }
     .imageFacialSec {
+     display: none;
+
+    }
+    .imageFacialSec-mobile{
         width: 100%;
-        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        display: block;
     }
 }
 
 @media (max-width: 500px) {
-    .facial-sec-1 h2 {
-        font-size: 20px;
-    }
     .section-content-p {
         font-size: 14px;
     }
 }
-
+/* Fleet managemnt */
+@media (max-width: 768px) {
+    #fleet-management{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 15px;
+        height: auto;
+        margin-top: 3rem;
+    }
+    .image-container{
+        display: none;
+    }
+    .fleet-management-sec1 h2{
+        font-size: 35px!important;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .fleet-management-sec1 {
+        text-align: left;
+        padding-left: 0px;
+        margin-left: 0rem;
+    }
+    .imagefleet-mobile{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        display: block;
+    }
+}
 /* Mobile View - Footer Section */
 @media (max-width: 768px) {
     footer {
