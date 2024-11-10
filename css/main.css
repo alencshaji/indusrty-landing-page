@@ -978,6 +978,9 @@ li {
         max-width: 100%;
         text-align: left;
     }
+    .ppe-sec-1{
+        margin-left: 0rem!important;
+    }
 
     .ppe-sec-1 h2 {
         font-size: 35px !important;
